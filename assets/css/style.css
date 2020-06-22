@@ -1,0 +1,368 @@
+/*----------------  Variables ------------------------ */
+
+:root {
+    --dark-grey: #7a7979;
+    --light-grey: #bebebe;
+    --color-green: #2fef3b;
+    --deep-green: #11783a;
+    --black-green: #011308c4;
+    --color-white: #f5f5f5;
+    --section_item-gutter: 15%;
+    --section-gutter: 25%;
+}
+
+/* Global style
+-------------------------------*/
+
+/* Define 1rem to be 10px */
+html {
+    font-size: 62.5%;
+}
+body {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: var(--dark-grey);
+}
+
+h1,h2,h3,h4 {
+    color: var(--black-green);
+}
+
+.site-btn {
+    -moz-border-radius: 32.5px;
+    -webkit-border-radius: 32.5px;
+    border-radius: 32.5px;
+    position: relative;
+}
+
+
+/* Header style
+-------------------------------*/
+
+.bg-header {
+    position: relative;
+    background: #fff;
+    -moz-box-shadow: 0px 4px 6px rgba(18, 78, 134, 0.12);
+    -webkit-box-shadow: 0px 4px 6px rgba(18, 78, 134, 0.12);
+    box-shadow: 0px 4px 6px rgba(18, 78, 134, 0.12);
+}
+
+.site-logo {
+    display: inline-block;
+    padding: 1.4375rem 0;
+    color: #383838;
+}
+
+.site-logo:hover {
+    color: #383838;
+    text-decoration: none;
+}
+
+
+.navbar-toggler {
+    border: none;
+    font-size: 25px;
+}
+
+.navbar-brand {
+    padding-left: 12px;
+}
+
+.navbar .container {
+    -moz-justify-content: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+    color: #949494;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--color-green);
+}
+
+.login-wrap {
+    position: absolute;
+    top: 36px;
+    right: 32px;
+}
+
+.login-link {
+    color: var(--color-green);
+    display: none;
+    padding: 8px 24px;
+    margin-left: 55px;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+    color: var(--color-green);
+}
+
+.nav-btn {
+    padding: 1rem 3rem;
+}
+.lang {
+    margin-right: 1rem;
+}
+
+/* Hero Section
+--------------------------------*/
+
+.landmark {
+    width: 100%;
+    background: #fff;
+    min-height: 570px;
+    padding-left: 32px;
+}
+
+.landmark h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1.3;
+    padding-top: 6.25rem;
+    text-transform: uppercase;
+}
+
+.landmark p {
+    font-weight: 300;
+    color: var(--dark-grey);
+}
+
+
+
+.header-btn {
+    text-transform: uppercase;
+    width: 25rem;
+    margin: 3rem 0 0;
+    padding: 1.5rem  2.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-white);
+    background-color: var(--deep-green);
+}
+
+.features {
+    text-align: center;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+}
+.feature_title {
+    margin-bottom: 4rem;
+}
+.icons {
+    /* width: 30%; */
+    width: 100px;
+    height: 100px;
+}
+.features h2{
+    font-weight: 600;
+    margin-top: 1rem;
+    font-size: 3.5rem;
+}
+
+.features p {
+    font-size: 1.6rem;
+    line-height: 1.9;
+    color: #7a7979;
+}
+
+/* Review
+-------------------------------*/
+
+.review {
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.04);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.04);
+    padding:  10% 0;
+    /* min-height: 480px; */
+}
+.review_illus {
+    position: relative;
+}
+.p-absolute {
+    position: absolute;
+    left: -2rem;
+    top: 5rem;
+    width: 80%;
+}
+
+.review h2 {
+    font-size: 3rem;
+    line-height: 1.3;
+}
+
+.review p {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.05em;
+}
+
+
+
+/* Call to action
+-------------------------------*/
+
+.cta h2 {
+    font-weight: 500;
+    font-size: 4rem;
+    font-family: Poppins;
+    color: #2B2B2B;
+}
+.cta p {
+    font-size: 1.6rem;
+}
+
+
+/* Footer Sign Up
+-------------------------------*/
+
+.sign-up {
+    padding: 8.25rem 0;
+}
+
+
+.sign-action {
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 2;
+    letter-spacing: 0.05em;
+}
+
+.sign-up-input {
+    background: #FFFFFF;
+    -moz-border-radius: 44.5px;
+    -webkit-border-radius: 44.5px;
+    border-radius: 44.5px;
+    padding: 1rem 2rem;
+    width: 50%;
+    outline: none;
+    border: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    
+}
+
+.sign-up-input::placeholder {
+    font-weight: 300;
+    font-size: 1.6rem;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.footer-btn {
+    background: var(--color-green);
+    color: var(--color-white);
+    -moz-border-radius: 44.5px;
+    -webkit-border-radius: 44.5px;
+    border-radius: 44.5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+
+
+.footer {
+    background: var(--deep-green);
+    color: #fff;
+    padding:8% 0 ;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.tel {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+
+
+
+/* Media queries
+-------------------------------*/
+
+
+
+@media (min-width: 992px) {
+
+    .navbar-brand {
+        padding-left: 0;
+    }
+
+    
+    .navbar .container {
+        -moz-justify-content: space-between;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+    }
+
+    
+    .features {
+        padding-top: 5.125rem;
+        padding-bottom: 5.125rem;
+    }
+
+  
+    
+    .login-wrap {
+        position: static;
+    }
+
+    .login-link {
+        display: inline-block;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.375rem;
+        padding-left: 1.375rem;
+    }
+
+}
+
+@media (max-width: 990px) {
+    .cta , .review, .download-btn {
+        text-align: center;
+        margin-bottom: var(--section-gutter);
+    }
+    .download-btn {
+        justify-content: center;
+    }
+    .cta .row {
+        flex-direction: column-reverse !important;
+    }
+    .cta-text,.review-text {
+        margin-top:  var(--section_item-gutter);
+    }
+    .cta h2 {
+        font-size: 2rem;
+    }
+     
+}
+
+@media (max-width: 500px) {
+    label, select, .sport-men {
+        display: none;
+    }
+ 
+}
